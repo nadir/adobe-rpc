@@ -1,11 +1,24 @@
 from pypresence import Presence
+from pypresence.exceptions import InvalidID, InvalidPipe
 import handler
 import time
+import sys
 
 
 client_id = "482150417455775755"
 rich_presence = Presence(client_id)
-rich_presence.connect()
+
+
+def connect():
+    rich_presence.connect()
+
+
+try:
+    connect()
+except (InvalidID, InvalidPipe):
+    print("Discord is not running...")
+    sys.exit(0)
+
 
 start_time = int(time.time())
 

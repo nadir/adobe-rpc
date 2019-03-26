@@ -31,7 +31,7 @@ def get_process_info():
 
 
 def get_status(app_info, title):
-    if app_info['largeText'].lower() in title.lower():
+    if app_info['largeText'].lower() in title.lower() and app_info['splitBy'] != " - ":
         return "{}: IDLE".format(app_info['smallText'])
     else:
         title_seperated = title.split(app_info['splitBy'])
