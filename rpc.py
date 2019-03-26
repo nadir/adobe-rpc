@@ -16,11 +16,11 @@ try:
     while True:
         rpc_data = handler.get_rpc_update()
         rich_presence.update(state=rpc_data['state'],
-                             small_image="photoshop_small",
-                             large_image="photoshop_large",
-                             large_text="Adobe Photoshop",
-                             small_text="Editing",
-                             details="CC 2018",
+                             small_image=rpc_data['small_image'],
+                             large_image=rpc_data['large_image'],
+                             large_text=rpc_data['large_text'],
+                             small_text=rpc_data['small_text'],
+                             details=rpc_data['details'],
                              start=start_time)
         time.sleep(15)
 except KeyboardInterrupt:
