@@ -1,26 +1,47 @@
-[{
-	"photoshop": {
-		"processName": "photoshop.exe",
-		"splitBy": " @ ",
-		"largeImageKey": "photoshop_large",
-		"smallImageKey": "photoshop_small",
-		"largeText": "Adobe Photoshop",
-		"smallText": "Editing"
-	},
-	"illustrator": {
-		"processName": "illustrator.exe",
-		"splitBy": " @ ",
-		"largeImageKey": "illustrator_large",
-		"smallImageKey": "illustrator_small",
-		"largeText": "Adobe Illustrator",
-		"smallText": "Editing"
-	},
-	"aftereffects": {
-		"processName": "afterfx.exe",
-		"splitBy": " - ",
-		"largeImageKey": "afterfx_large",
-		"smallImageKey": "afterfx_small",
-		"largeText": "Adobe After Effects",
-		"smallText": "Editing"
-	}
-}]
+[
+  {
+    "photoshop": {
+      "processName": "photoshop.exe",
+      "splitBy": " @ ",
+      "splitIndex": 1,
+      "largeImageKey": "photoshop_large",
+      "smallImageKey": "photoshop_small",
+      "largeText": "Adobe Photoshop",
+      "smallText": "Editing"
+    },
+    "illustrator": {
+      "processName": "illustrator.exe",
+      "splitBy": " @ ",
+      "splitIndex": 1,
+      "largeImageKey": "illustrator_large",
+      "smallImageKey": "illustrator_small",
+      "largeText": "Adobe Illustrator",
+      "smallText": "Editing"
+    },
+    "aftereffects": {
+      "processName": "afterfx.exe",
+      "splitBy": " - ",
+      "splitIndex": 2,
+      "largeImageKey": "afterfx_large",
+      "smallImageKey": "afterfx_small",
+      "largeText": "Adobe After Effects",
+      "smallText": "Editing"
+    },
+    "acrobat": {
+      "processName": "acrobat.exe",
+      "splitBy": " - ",
+      "splitIndex": 1,
+      "largeImageKey": "acrobat_large",
+      "smallImageKey": "acrobat_small",
+      "largeText": "Adobe Acrobat",
+      "smallText": "Reading"
+    },
+    "lightroom": {
+      "processName": "lightroomcc.exe",
+      "largeImageKey": "lightroom_large",
+      "smallImageKey": "lightroom_small",
+      "largeText": "Adobe Acrobat",
+      "smallText": "Editing"
+    }
+  }
+]
