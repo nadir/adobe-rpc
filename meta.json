@@ -15,7 +15,7 @@
 		"largeText": "Adobe Illustrator",
 		"smallText": "Editing"
 	},
-	"after effects": {
+	"aftereffects": {
 		"processName": "afterfx.exe",
 		"splitBy": " - ",
 		"largeImageKey": "afterfx_large",
