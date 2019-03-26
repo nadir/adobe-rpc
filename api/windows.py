@@ -1,16 +1,7 @@
 import win32gui
 import win32process
 import psutil
-
-
-def get_process_id(processName):
-    for process in psutil.process_iter():
-        try:
-            processinfo = process.as_dict(attrs=['pid', 'name'])
-            if processinfo['name'].lower() in processName.lower():
-                return processinfo['pid']
-        except psutil.NoSuchProcess:
-            return None
+import json
 
 
 def get_title(pid):
@@ -25,9 +16,23 @@ def get_title(pid):
     return window_title
 
 
-def get_status(title):
-    if "Adobe Photoshop".lower() in title.lower():
-        return "IDLE"
+with open('meta.json') as f:
+    data = json.load(f)
+
+
+def get_process_info():
+    for element in data:
+        process_name = element['processName']
+        for process in psutil.process_iter():
+            process_info = process.as_dict(attrs=['pid', 'name'])
+            if process_info['name'].lower() in process_name:
+                element['pid'] = process_info['pid']
+                return element
+
+
+def get_status(app_info, title):
+    if app_info['largeText'].lower() in title.lower():
+        return "{}: IDLE".format(app_info['smallText'])
     else:
-        title_seperated = title.split(" @ ")
-        return title_seperated[0]
+        title_seperated = title.split(app_info['splitBy'])
+        return "{}: {}".format(app_info['smallText'], title_seperated[app_info['splitIndex']])
