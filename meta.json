@@ -1,5 +1,4 @@
-[
-  {
+[{
     "photoshop": {
       "processName": "photoshop.exe",
       "splitBy": " @ ",
@@ -8,7 +7,9 @@
       "smallImageKey": "photoshop_small",
       "largeText": "Adobe Photoshop",
       "smallText": "Editing"
-    },
+    }
+  },
+  {
     "illustrator": {
       "processName": "illustrator.exe",
       "splitBy": " @ ",
@@ -17,7 +18,9 @@
       "smallImageKey": "illustrator_small",
       "largeText": "Adobe Illustrator",
       "smallText": "Editing"
-    },
+    }
+  },
+  {
     "aftereffects": {
       "processName": "afterfx.exe",
       "splitBy": " - ",
@@ -26,7 +29,9 @@
       "smallImageKey": "afterfx_small",
       "largeText": "Adobe After Effects",
       "smallText": "Editing"
-    },
+    }
+  },
+  {
     "acrobat": {
       "processName": "acrobat.exe",
       "splitBy": " - ",
@@ -35,7 +40,9 @@
       "smallImageKey": "acrobat_small",
       "largeText": "Adobe Acrobat",
       "smallText": "Reading"
-    },
+    }
+  },
+  {
     "lightroom": {
       "processName": "lightroomcc.exe",
       "largeImageKey": "lightroom_large",
