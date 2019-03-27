@@ -14,8 +14,6 @@ Rich Presence for Discord to display what you're currently doing in most of adob
 - If you're running a 64bit version of python, download the pywin32 binaries from [here!](https://github.com/mhammond/pywin32/releases)
 - Adobe apps (obviously)
 
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
-
 ## How to use
 
 - Clone the repo `$ git clone git@github.com:smokes/adobe-rpc.git`
