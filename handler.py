@@ -7,11 +7,6 @@ def get_rpc_update():
             from api.windows import get_title, get_process_info, get_status
 
             app_info = get_process_info()
-
-            if app_info == None:
-                print("No Adobe app is running")
-                sys.exit(0)
-
             app_title = get_title(app_info['pid'])
             app_state = get_status(app_info, app_title)
 
