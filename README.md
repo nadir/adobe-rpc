@@ -34,7 +34,7 @@ Rich Presence for Discord to display what you're currently doing in most of adob
 
 - Macos support
 - Better error handling
-- Prevent app from exiting when Discord or any app is running.
+- Prevent app from exiting when Discord or any app isn't running.
 
 ## Contributing
 
