@@ -1,5 +1,4 @@
 from pypresence import Presence
-from pypresence.exceptions import InvalidID, InvalidPipe
 import handler
 import time
 
