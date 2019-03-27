@@ -1,13 +1,9 @@
+
+
 ![alt text][header]
 
 [header]: https://i.imgur.com/zGFYunZ.png "Repo header"
 
-
-<div align="center">
-   <img src="https://i.imgur.com/h1ipmi8.png" width="30%" />
-   <img src="https://i.imgur.com/Zf6drg7.png" width="30%" />
-   <img src="https://i.imgur.com/CIneIrh.png" width="30%" />
-</div>
 
 
 
@@ -24,8 +20,21 @@
 * Run the script `$ python rpc.py`
 * Enjoy!
 
-## TODOs
+
+## Preview
+<div align="center">
+   <img src="https://i.imgur.com/h1ipmi8.png" width="30%" />
+   <img src="https://i.imgur.com/Zf6drg7.png" width="30%" />
+   <img src="https://i.imgur.com/CIneIrh.png" width="30%" />
+</div>
+
+
+## TODOs 
 * Macos support
 * Better error handling
 * Prevent app from exiting when Discord or any app is running.
 
+## Contributing
+
+
+**adobe-rpc** currently doesn't support all of adobe's applications. Any contributions to the repository are welcome.
