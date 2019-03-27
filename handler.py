@@ -1,6 +1,4 @@
 import sys
-import json
-from pypresence.exceptions import InvalidID, InvalidPipe
 
 
 def get_rpc_update():
