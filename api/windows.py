@@ -2,6 +2,7 @@ import win32gui
 import win32process
 import psutil
 import json
+import ntpath
 
 
 def get_title(pid):
@@ -35,4 +36,9 @@ def get_status(app_info, title):
         return "{}: IDLE".format(app_info['smallText'])
     else:
         title_seperated = title.split(app_info['splitBy'])
-        return "{}: {}".format(app_info['smallText'], title_seperated[app_info['splitIndex']])
+        if app_info['splitBy'] == " - ":
+            title_basename = ntpath.basename(
+                title_seperated[app_info['splitIndex']])
+            return "{}: {}".format(app_info['smallText'], title_basename)
+        else:
+            return "{}: {}".format(app_info['smallText'], title_seperated[app_info['splitIndex']])
