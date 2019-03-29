@@ -36,10 +36,12 @@
 		"smallText": "Reading"
 	},
 	{
-		"processName": "lightroomcc.exe",
-		"largeImageKey": "lightroom_large",
-		"smallImageKey": "lightroom_small",
-		"largeText": "Adobe Acrobat",
+		"processName": "indesign.exe",
+		"splitBy": " @ ",
+		"splitIndex": 0,
+		"largeImageKey": "indesign_large",
+		"smallImageKey": "indesign_small",
+		"largeText": "Adobe InDesign",
 		"smallText": "Editing"
 	}
 ]
