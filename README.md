@@ -22,6 +22,10 @@ Rich Presence for Discord to display what you're currently doing in most of adob
 - Run the script `$ python rpc.py`
 - Enjoy!
 
+## Binaries
+
+The easiest way to use **adobe-rpc** is to download the **.exe** from the [releases!](https://github.com/smokes/adobe-rpc/releases) page.
+
 ## Preview
 
 <div align="center">
