@@ -16,7 +16,7 @@ Rich Presence for Discord to display what you're currently doing in most of adob
 
 ## How to use
 
-- Clone the repo `$ git clone git@github.com:smokes/adobe-rpc.git`
+- Clone the repo `$ git clone https://github.com/smokes/adobe-rpc.git`
 - Make sure you're running an Adobe application.
 - Install the required packages `$ pip install -r requirements.txt`
 - Run the script `$ python rpc.py`
