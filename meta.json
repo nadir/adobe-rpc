@@ -9,6 +9,15 @@
 
 	},
 	{
+		"processName": "adobe premiere pro.exe",
+		"splitBy": " - ",
+		"splitIndex": 1,
+		"largeImageKey": "premierepro_large",
+		"smallImageKey": "premierepro_small",
+		"largeText": "Adobe Premiere Pro",
+		"smallText": "Editing"
+	},
+	{
 		"processName": "illustrator.exe",
 		"splitBy": " @ ",
 		"splitIndex": 0,
@@ -42,15 +51,6 @@
 		"largeImageKey": "indesign_large",
 		"smallImageKey": "indesign_small",
 		"largeText": "Adobe InDesign",
-		"smallText": "Editing"
-	},
-	{
-		"processName": "Adobe Premiere Pro.exe",
-		"splitBy": " - ",
-		"splitIndex": 1,
-		"largeImageKey": "premierepro_large",
-		"smallImageKey": "premierepro_small",
-		"largeText": "Adobe Premiere Pro",
 		"smallText": "Editing"
 	}
 ]
