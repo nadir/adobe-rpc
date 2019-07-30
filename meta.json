@@ -5,9 +5,55 @@
 		"largeImageKey": "photoshop_large",
 		"smallImageKey": "photoshop_small",
 		"largeText": "Adobe Photoshop",
-		"smallText": "Editing"
+		"smallText": "Working on"
 
 	},
+	{
+		"processName": "adobe premiere pro.exe",
+		"splitBy": " - ",
+		"splitIndex": 1,
+		"largeImageKey": "premierepro_large",
+		"smallImageKey": "premierepro_small",
+		"largeText": "Adobe Premiere Pro",
+		"smallText": "Editing video"
+	},	
+	// Adobe Media Encoder stuff is not finished yet.
+
+	// {
+	// 	"processName": "Adobe Media Encoder.exe",
+	// 	"splitBy": false,
+	// 	"splitIndex": 1,
+	// 	"largeImageKey": "ame_large",
+	// 	"smallImageKey": "ame_small",
+	// 	"largeText": "Adobe Media Encoder",
+	// 	"smallText": "Encoding video"
+	// },
+
+	
+	// Adobe Audition stuff is not finished yet.
+
+	// {
+	// 	"processName": "Adobe Audition CC.exe",
+	// 	"splitBy": false,
+	// 	"splitIndex": false,
+	// 	"largeImageKey": "audition_large",
+	// 	"smallImageKey": "audition_small",
+	// 	"largeText": "Adobe Audition",
+	// 	"smallText": "Recording/editing audio"
+	// },
+
+	
+	//Adobe XD stuff is not finished yet.
+	// {
+	// 	"processName": "XD.exe",
+	// 	"splitBy": false,
+	// 	"splitIndex": false,
+	// 	"largeImageKey": "xd_large",
+	// 	"smallImageKey": "xd_small",
+	// 	"largeText": "Adobe XD",
+	// 	"smallText": "Working on project"
+	// },
+	
 	{
 		"processName": "illustrator.exe",
 		"splitBy": " @ ",
@@ -15,7 +61,7 @@
 		"largeImageKey": "illustrator_large",
 		"smallImageKey": "illustrator_small",
 		"largeText": "Adobe Illustrator",
-		"smallText": "Editing"
+		"smallText": "Working on"
 	},
 	{
 		"processName": "afterfx.exe",
@@ -24,7 +70,7 @@
 		"largeImageKey": "aftereffects_large",
 		"smallImageKey": "aftereffects_small",
 		"largeText": "Adobe After Effects",
-		"smallText": "Editing"
+		"smallText": "Working on"
 	},
 	{
 		"processName": "acrobat.exe",
@@ -42,15 +88,6 @@
 		"largeImageKey": "indesign_large",
 		"smallImageKey": "indesign_small",
 		"largeText": "Adobe InDesign",
-		"smallText": "Editing"
-	},
-	{
-		"processName": "Adobe Premiere Pro.exe",
-		"splitBy": " - ",
-		"splitIndex": 1,
-		"largeImageKey": "premierepro_large",
-		"smallImageKey": "premierepro_small",
-		"largeText": "Adobe Premiere Pro",
-		"smallText": "Editing"
+		"smallText": "Working on"
 	}
 ]
