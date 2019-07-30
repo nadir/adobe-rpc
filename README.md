@@ -42,6 +42,6 @@ The easiest way to use **adobe-rpc** is to download the **.exe** from the [relea
 
 ## Contributing
 
-**adobe-rpc** currently doesn't support: Media Encoder, Xd and Audition. Please submit a PR where you add an app that we haven't added yet to the file **meta.json**, where you specify the app's process name.
+**adobe-rpc** currently doesn't support: Media Encoder, Xd and Audition. Please submit a PR where you add an app that we haven't included yet to the file **meta.json**, where you specify the app's process name.
 
 [header]: https://i.imgur.com/zGFYunZ.png "Repo header"
