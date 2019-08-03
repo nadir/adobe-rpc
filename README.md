@@ -14,7 +14,7 @@ Rich Presence for Discord to display what you're currently doing in most of adob
 - If you're running a 64bit version of python, download the pywin32 binaries from [here!](https://github.com/mhammond/pywin32/releases)
 - Adobe apps (obviously)
 
-## How to use
+## How to install
 
 - Clone the repo `$ git clone https://github.com/smokes/adobe-rpc.git`
 - Make sure you're running an Adobe application.
