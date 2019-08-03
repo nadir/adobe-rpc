@@ -6,7 +6,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![GitHub issues](https://img.shields.io/github/issues/smokes/adobe-rpc.svg)](https://GitHub.com/smokes/adobe-rpc/issues/)
 
-Rich Presence for Discord to display what you're currently doing in most of adobe's applications
+Rich Presence for Discord to display what you're currently doing in most of Adobe's CC applications
 
 ## Requirements
 

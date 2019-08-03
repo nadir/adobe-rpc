@@ -5,8 +5,7 @@
 		"largeImageKey": "photoshop_large",
 		"smallImageKey": "photoshop_small",
 		"largeText": "Adobe Photoshop",
-		"smallText": "Editing"
-
+		"smallText": "Working on"
 	},
 	{
 		"processName": "adobe premiere pro.exe",
@@ -24,7 +23,7 @@
 		"largeImageKey": "illustrator_large",
 		"smallImageKey": "illustrator_small",
 		"largeText": "Adobe Illustrator",
-		"smallText": "Editing"
+		"smallText": "Working on"
 	},
 	{
 		"processName": "afterfx.exe",
@@ -33,7 +32,7 @@
 		"largeImageKey": "aftereffects_large",
 		"smallImageKey": "aftereffects_small",
 		"largeText": "Adobe After Effects",
-		"smallText": "Editing"
+		"smallText": "Compositing"
 	},
 	{
 		"processName": "acrobat.exe",
@@ -51,6 +50,42 @@
 		"largeImageKey": "indesign_large",
 		"smallImageKey": "indesign_small",
 		"largeText": "Adobe InDesign",
-		"smallText": "Editing"
+		"smallText": "Working on"
+	},
+	{
+		"processName": "AcroRd32.exe",
+		"splitBy": " - ",
+		"splitIndex": 0,
+		"largeImageKey": "acrobatdc_large",
+		"smallImageKey": "acrobatdc_small",
+		"largeText": "Adobe Acrobat Reader DC",
+		"smallText": "Reading"
+	},
+	{
+		"processName": "Adobe Media Encoder.exe",
+		"splitBy": false,
+		"splitIndex": false,
+		"largeImageKey": "ame_large",
+		"smallImageKey": "ame_small",
+		"largeText": "Adobe Media Encoder",
+		"smallText": "Encoding"
+	},
+	{
+		"processName": "Adobe Audition CC.exe",
+		"splitBy": false,
+		"splitIndex": false,
+		"largeImageKey": "audition_large",
+		"smallImageKey": "audition_small",
+		"largeText": "Adobe Audition",
+		"smallText": "Recording/editing audio"
+	},
+	{
+		"processName": "XD.exe",
+		"splitBy": false,
+		"splitIndex": false,
+		"largeImageKey": "xd_large",
+		"smallImageKey": "xd_small",
+		"largeText": "Adobe XD",
+		"smallText": "Working on"
 	}
 ]
