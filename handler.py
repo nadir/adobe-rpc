@@ -24,7 +24,3 @@ def get_rpc_update():
     elif sys.platform in ['Mac', 'darwin', 'os2', 'os2emx']:
         print("Macos support is currently not available.")
         sys.exit(0)
-
-
-def exception_handler(exception, future):
-    print("")
