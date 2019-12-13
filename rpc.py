@@ -1,27 +1,39 @@
-from pypresence import Presence
+from pypresence import Presence, activity
+import logging
 import handler
 import time
 
+# Client Setup
 client_id = "482150417455775755"
 rich_presence = Presence(client_id)
 
+# Logging config
+logging.basicConfig(level=logging.INFO, format=('%(asctime)s - %(levelname)s - ' +
+                                                '%(funcName)s - %(message)s'),
+                    datefmt='%d-%m-%y %H:%M:%S')
+
 def connect():
+    logging.info("Connected to rich presence!")
     return rich_presence.connect()
+
 
 def connect_loop(retries=0):
     if retries > 10:
         return
     try:
+        logging.info("Connecting rich presence...")
         connect()
     except:
-        print("Error connecting to Discord")
+        logging.error("Error connecting to Discord, retrying...")
         time.sleep(10)
         retries += 1
         connect_loop(retries)
     else:
         update_loop()
 
-print("Started Adobe RPC")
+
+logging.info("Started Adobe RPC")
+
 
 def update_loop():
     start_time = int(time.time())
@@ -38,11 +50,12 @@ def update_loop():
             time.sleep(15)
     except:
         rich_presence.clear()
-        print("Run Adobe/Discord app")
+        logging.warning("Run Adobe/Discord app")
         time.sleep(5)
         update_loop()
+
 
 try:
     connect_loop()
 except KeyboardInterrupt:
-    print("Stopped Adobe RPC")
+    logging.info("Stopped Adobe RPC")

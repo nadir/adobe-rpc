@@ -19,10 +19,11 @@ def get_rpc_update():
             return rpc_update
 
         except ImportError:
-            print("Make sure you have pywin32 installed, for more info read README.md")
+            logging.error(
+                "Make sure you have pywin32 installed, for more info read README.md")
 
     elif sys.platform in ['Mac', 'darwin', 'os2', 'os2emx']:
-        print("Macos support is currently not available.")
+        logging.warning("Macos support is currently not available.")
         sys.exit(0)
 
 

@@ -6,6 +6,8 @@ import ntpath
 
 
 def get_title(pid):
+    logging.info("Getting title for the application")
+
     def callback(hwnd, hwnds):
         if win32gui.IsWindowVisible(hwnd) and win32gui.IsWindowEnabled(hwnd):
             _, found_pid = win32process.GetWindowThreadProcessId(hwnd)
@@ -14,6 +16,7 @@ def get_title(pid):
     hwnds = []
     win32gui.EnumWindows(callback, hwnds)
     window_title = win32gui.GetWindowText(hwnds[-1])
+    logging.info("Title of application: " + window_title)
     return window_title
 
 
