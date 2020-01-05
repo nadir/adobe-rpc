@@ -60,7 +60,7 @@ def update_loop():
 # Main instance
 def main():
     logging.info("Started Adobe RPC, starting rich presence...")
-    connect_loop()    
+    connect_loop()
 
 if __name__ == "__main__":
     try:
