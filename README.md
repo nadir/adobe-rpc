@@ -1,6 +1,6 @@
-![alt text][header]
-
 # Adobe Discord Rich Presence
+
+![alt text][header]
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/719bbef946084e78b20a1c7c63420e86)](https://www.codacy.com/app/imsmokie/adobe-rpc?utm_source=github.com&utm_medium=referral&utm_content=smokes/adobe-rpc&utm_campaign=Badge_Grade)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
@@ -11,7 +11,7 @@ Rich Presence for Discord to display what you're currently doing in most of adob
 ## Requirements
 
 - Python 3.4+ with Pip
-- If you're running a 64bit version of python, download the pywin32 binaries from [here!](https://github.com/mhammond/pywin32/releases)
+- If you're running a 64bit version of python, download the `pywin32` binaries from [here!](https://github.com/mhammond/pywin32/releases)
 - Adobe apps (obviously)
 
 ## How to use
@@ -26,6 +26,10 @@ Rich Presence for Discord to display what you're currently doing in most of adob
 
 The easiest way to use **adobe-rpc** is to download the **.exe** from the [releases!](https://github.com/smokes/adobe-rpc/releases) page.
 
+## Building binaries
+
+Building the binaries from source requires `pyinstaller`
+
 ## Preview
 
 <div align="center">
@@ -36,7 +40,7 @@ The easiest way to use **adobe-rpc** is to download the **.exe** from the [relea
 
 ## TODOs
 
-- Macos support
+- Mac OS support
 - Better error handling
 - Prevent app from exiting when Discord or any app isn't running.
 

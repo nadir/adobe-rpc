@@ -7,7 +7,7 @@ import logging
 
 # Processes title of application from PID
 def get_title(pid):
-    logging.info("Getting title for the application...")
+    logging.debug("Getting title for the application...")
 
     def callback(hwnd, hwnds):
         if win32gui.IsWindowVisible(hwnd) and win32gui.IsWindowEnabled(hwnd):
@@ -17,8 +17,9 @@ def get_title(pid):
     hwnds = []
     win32gui.EnumWindows(callback, hwnds)
     window_title = win32gui.GetWindowText(hwnds[-1])
-    logging.info("Title of application: " + window_title)
+    logging.debug("Title of application: " + window_title)
     return window_title
+
 
 # Parses metadata for associated applications
 with open('meta.json') as f:
@@ -27,7 +28,7 @@ with open('meta.json') as f:
 
 # Process information of application
 def get_process_info():
-    logging.info("Getting process information...")
+    logging.debug("Getting process information...")
     for element in data:
         # Finds process name for Adobe applications
         process_name = element['processName']
@@ -36,23 +37,24 @@ def get_process_info():
             process_info = process.as_dict(attrs=['pid', 'name'])
             if process_info['name'].lower() in process_name:
                 element['pid'] = process_info['pid']
-                logging.info("Process returns with info: " + str(process_info))
+                logging.debug("Process returns with info: " +
+                            str(process_info))
                 return element
 
 # Status of application
 def get_status(app_info, title):
     # Idle detection
     if app_info['largeText'].lower() in title.lower() and app_info['splitBy'] != " - ":
-        logging.info("Returning to Discord that you are detected as idle...")
+        logging.debug("Returning to Discord that you are detected as idle...")
         return "{}: IDLE".format(app_info['smallText'])
     # Project detection
     else:
-        logging.info("Not idling! Finding project...")
+        logging.debug("Not idling! Finding project...")
         title_seperated = title.split(app_info['splitBy'])
         if app_info['splitBy'] == " - ":
             title_basename = ntpath.basename(
                 title_seperated[app_info['splitIndex']])
-            logging.info("Returning the title of the project")
+            logging.debug("Returning the title of the project")
             return "{}: {}".format(app_info['smallText'], title_basename)
         else:
             return "{}: {}".format(app_info['smallText'], title_seperated[app_info['splitIndex']])
