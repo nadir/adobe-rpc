@@ -18,17 +18,21 @@ Rich Presence for Discord to display what you're currently doing in most of adob
 
 - Clone the repo `$ git clone https://github.com/smokes/adobe-rpc.git`
 - Make sure you're running an Adobe application.
-- Install the required packages `$ pip install -r requirements.txt`
+- Install the required packages `$ pip install -r -u requirements.txt`
 - Run the script `$ python rpc.py`
 - Enjoy!
+
+### Building binaries
+
+Building the binaries from source requires `pyinstaller`
+
+- Install `$ pip install -u pyinstaller`
+- If you are building on Python 3.8+, run `$ pip install -u https://github.com/pyinstaller/pyinstaller/archive/develop.tar.gz`
+- Build `$ pyinstaller --onefile .\rpc.py`
 
 ## Binaries
 
 The easiest way to use **adobe-rpc** is to download the **.exe** from the [releases!](https://github.com/smokes/adobe-rpc/releases) page.
-
-## Building binaries
-
-Building the binaries from source requires `pyinstaller`
 
 ## Preview
 
