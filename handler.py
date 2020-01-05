@@ -39,7 +39,7 @@ def get_rpc_update():
     elif sys.platform in ['Mac', 'darwin', 'os2', 'os2emx']:
         logging.warning("MacOS support is currently not available. Closing...")
         sys.exit(0)
-    
+
     else:
         logging.error("Unknown operating system! Exiting...")
         logging.error("If you believe this is an error. Submit a bug report.")
