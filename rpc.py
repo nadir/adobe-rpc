@@ -10,7 +10,7 @@ rich_presence = Presence(client_id)
 
 # Logging config
 logging.basicConfig(level=logging.DEBUG, format=('%(asctime)s - %(levelname)s - ' +
-                                                '%(funcName)s - %(message)s'),
+                                                 '%(funcName)s - %(message)s'),
                     datefmt='%d-%m-%y %H:%M:%S')
 
 # Binds RPC connection to Discord
@@ -53,7 +53,8 @@ def update_loop():
     except:
         # Clear rpc_data
         rich_presence.clear()
-        logging.warning("Not detecting Adobe applications! Is it running?")
+        logging.warning(
+            "Not detecting Adobe applications! Are you sure your running a compatible application?")
         # Update Discord
         update_loop()
 
