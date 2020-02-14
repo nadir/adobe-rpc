@@ -1,6 +1,7 @@
 [
 	{
 		"processName": "photoshop.exe",
+		"processNameMac": "Adobe Photoshop",
 		"splitBy": " @ ",
 		"splitIndex": 0,
 		"largeImageKey": "photoshop_large",
@@ -10,6 +11,7 @@
 	},
 	{
 		"processName": "adobe premiere pro.exe",
+		"processNameMac": "Adobe Premiere Pro",
 		"splitBy": " - ",
 		"splitIndex": 1,
 		"largeImageKey": "premierepro_large",
@@ -19,6 +21,7 @@
 	},
 	{
 		"processName": "illustrator.exe",
+		"processNameMac": "Adobe Illustrator",
 		"splitBy": " @ ",
 		"splitIndex": 0,
 		"largeImageKey": "illustrator_large",
@@ -28,6 +31,7 @@
 	},
 	{
 		"processName": "afterfx.exe",
+		"processNameMac": "Adobe After Effects",
 		"splitBy": " - ",
 		"splitIndex": 1,
 		"largeImageKey": "aftereffects_large",
@@ -37,6 +41,7 @@
 	},
 	{
 		"processName": "acrobat.exe",
+		"processNameMad":"Adobe Acrobat",
 		"splitBy": " - ",
 		"splitIndex": 0,
 		"largeImageKey": "acrobat_large",
@@ -46,6 +51,7 @@
 	},
 	{
 		"processName": "indesign.exe",
+		"processNameMac":"Adobe InDesicgn",
 		"splitBy": " @ ",
 		"splitIndex": 0,
 		"largeImageKey": "indesign_large",
