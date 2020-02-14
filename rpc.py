@@ -27,7 +27,6 @@ def connect_loop(retries=0):
         connect()
     except:
         logging.error("Error connecting to Discord! Retrying")
-        time.sleep(10)
         retries += 1
         connect_loop(retries)
     else:
@@ -64,8 +63,4 @@ def main():
     connect_loop()
 
 if __name__ == "__main__":
-    try:
-        main()
-    except (KeyboardInterrupt, SystemExit):
-        logging.info("Stopped Adobe RPC!")
-        sys.exit(0)
+    main()

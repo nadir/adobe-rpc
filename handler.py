@@ -27,13 +27,10 @@ def get_rpc_update():
 
         except ImportError:
             logging.error(
-                "Make sure you have 'pywin32' installed, for more info read README.md")
+                "Required dependency is not found! Did install all dependencies? Check with the README")
             sys.exit(1)
         except TypeError:
             logging.error("No Adobe Applications running!")
-        except (KeyboardInterrupt, SystemExit):
-            logging.info("Stopped Adobe RPC!")
-            sys.exit(0)
 
     # Unsupported operating systems for the time being
     elif sys.platform in ['Mac', 'darwin', 'os2', 'os2emx']:

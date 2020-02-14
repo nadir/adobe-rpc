@@ -1,3 +1,2 @@
 pypresence
-pywin32
 psutil
