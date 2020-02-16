@@ -1,6 +1,7 @@
 [
 	{
-		"processName": "photoshop.exe",
+
+		"processNameWin": "photoshop.exe",
 		"processNameMac": "Adobe Photoshop",
 		"splitBy": " @ ",
 		"splitIndex": 0,
@@ -10,7 +11,8 @@
 		"smallText": "Editing"
 	},
 	{
-		"processName": "adobe premiere pro.exe",
+
+		"processNameWin": "adobe premiere pro.exe",
 		"processNameMac": "Adobe Premiere Pro",
 		"splitBy": " - ",
 		"splitIndex": 1,
@@ -20,7 +22,7 @@
 		"smallText": "Editing"
 	},
 	{
-		"processName": "illustrator.exe",
+		"processNameWin": "illustrator.exe",
 		"processNameMac": "Adobe Illustrator",
 		"splitBy": " @ ",
 		"splitIndex": 0,
@@ -30,7 +32,7 @@
 		"smallText": "Editing"
 	},
 	{
-		"processName": "afterfx.exe",
+		"processNameWin": "afterfx.exe",
 		"processNameMac": "Adobe After Effects",
 		"splitBy": " - ",
 		"splitIndex": 1,
@@ -40,8 +42,8 @@
 		"smallText": "Editing"
 	},
 	{
-		"processName": "acrobat.exe",
-		"processNameMad":"Adobe Acrobat",
+		"processNameWin": "acrobat.exe",
+		"processNameMad": "Adobe Acrobat",
 		"splitBy": " - ",
 		"splitIndex": 0,
 		"largeImageKey": "acrobat_large",
@@ -50,8 +52,8 @@
 		"smallText": "Reading"
 	},
 	{
-		"processName": "indesign.exe",
-		"processNameMac":"Adobe InDesicgn",
+		"processNameWin": "indesign.exe",
+		"processNameMac": "Adobe InDesign",
 		"splitBy": " @ ",
 		"splitIndex": 0,
 		"largeImageKey": "indesign_large",

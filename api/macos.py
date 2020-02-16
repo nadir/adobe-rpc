@@ -1,4 +1,3 @@
-
 from Quartz import CGWindowListCopyWindowInfo, kCGNullWindowID, kCGWindowListOptionAll
 import psutil
 import json
