@@ -58,9 +58,10 @@ def update_loop():
         update_loop()
 
 # Main instance
-def main():
-    logging.info("Started Adobe RPC, starting rich presence...")
-    connect_loop()
-
 if __name__ == "__main__":
-    main()
+    try:
+        logging.info("Started Adobe RPC!")
+        connect_loop()
+    except KeyboardInterrupt:
+        logging.info("Stopped Adobe RPC!")
+        sys.exit(0)
