@@ -32,13 +32,19 @@ def get_process_info():
     for element in data:
         # Finds process name for Adobe applications
         process_name = element['processName']
+        logging.debug("Loading Process names for Windows...")
         for process in psutil.process_iter():
             # Finds pid through iteration
             process_info = process.as_dict(attrs=['pid', 'name'])
+            logging.debug("Found proc '%s' at pid '%s'" % (process_info['name'],process_info['pid']))
+            # If the process name is listed in the 'meta.json', set process_info to element and return the element
             if process_info['name'].lower() in process_name:
                 element['pid'] = process_info['pid']
-                logging.debug("Process returns with info: " +
-                            str(process_info))
+                logging.debug("Found process '%s'" % (process_info['name','pid']))
+                return element
+            else:
+                logging.error("No applications detected at all.")
+                element = None
                 return element
 
 # Status of application

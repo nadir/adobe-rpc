@@ -13,10 +13,6 @@ logging.basicConfig(level=logging.DEBUG, format=('%(asctime)s - %(levelname)s - 
                                                  '%(funcName)s - %(message)s'),
                     datefmt='%d-%m-%y %H:%M:%S')
 
-# Binds RPC connection to Discord
-def connect():
-    return rich_presence.connect()
-
 # Attempts to find Discord
 def connect_loop(retries=0):
     logging.info("Connecting rich presence...")
@@ -24,7 +20,7 @@ def connect_loop(retries=0):
         return
     try:
         logging.info("Conneting to RPC...")
-        connect()
+        rich_presence.connect()
     except:
         logging.error("Error connecting to Discord! Retrying")
         retries += 1
