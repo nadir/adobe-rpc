@@ -31,12 +31,13 @@ def get_rpc_update():
             # If 'get_process_info()' doesn't find a proper 'processName' element, stop application
             elif app_info == None:
                 logging.error("Unable to find process")
-                sys.exit(1)
 
         except ImportError:
             logging.error(
                 "Required dependency is not found! Did install all dependencies? Check with the README")
             sys.exit(1)
+        except TypeError:
+            logging.error("No Adobe Applications running!")
 
     # Unsupported operating systems for the time being
     elif sys.platform in ['Mac', 'darwin', 'os2', 'os2emx']:

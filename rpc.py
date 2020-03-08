@@ -58,6 +58,6 @@ if __name__ == "__main__":
     try:
         logging.info("Started Adobe RPC!")
         connect_loop()
-    except KeyboardInterrupt:
+    except:
         logging.info("Stopped Adobe RPC!")
         sys.exit(0)

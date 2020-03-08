@@ -1,56 +1,56 @@
 [
-	{
-		"processName": "photoshop.exe",
-		"splitBy": " @ ",
-		"splitIndex": 0,
-		"largeImageKey": "photoshop_large",
-		"smallImageKey": "photoshop_small",
-		"largeText": "Adobe Photoshop",
-		"smallText": "Editing"
-	},
-	{
-		"processName": "adobe premiere pro.exe",
-		"splitBy": " - ",
-		"splitIndex": 1,
-		"largeImageKey": "premierepro_large",
-		"smallImageKey": "premierepro_small",
-		"largeText": "Adobe Premiere Pro",
-		"smallText": "Editing"
-	},
-	{
-		"processName": "illustrator.exe",
-		"splitBy": " @ ",
-		"splitIndex": 0,
-		"largeImageKey": "illustrator_large",
-		"smallImageKey": "illustrator_small",
-		"largeText": "Adobe Illustrator",
-		"smallText": "Editing"
-	},
-	{
-		"processName": "afterfx.exe",
-		"splitBy": " - ",
-		"splitIndex": 1,
-		"largeImageKey": "aftereffects_large",
-		"smallImageKey": "aftereffects_small",
-		"largeText": "Adobe After Effects",
-		"smallText": "Editing"
-	},
-	{
-		"processName": "acrobat.exe",
-		"splitBy": " - ",
-		"splitIndex": 0,
-		"largeImageKey": "acrobat_large",
-		"smallImageKey": "acrobat_small",
-		"largeText": "Adobe Acrobat",
-		"smallText": "Reading"
-	},
-	{
-		"processName": "indesign.exe",
-		"splitBy": " @ ",
-		"splitIndex": 0,
-		"largeImageKey": "indesign_large",
-		"smallImageKey": "indesign_small",
-		"largeText": "Adobe InDesign",
-		"smallText": "Editing"
-	}
+    {
+        "processName": "photoshop.exe",
+        "splitBy": " @ ",
+        "splitIndex": 0,
+        "largeImageKey": "photoshop_large",
+        "smallImageKey": "photoshop_small",
+        "largeText": "Adobe Photoshop",
+        "smallText": "Editing"
+    },
+    {
+        "processName": "adobe premiere pro.exe",
+        "splitBy": " - ",
+        "splitIndex": 1,
+        "largeImageKey": "premierepro_large",
+        "smallImageKey": "premierepro_small",
+        "largeText": "Adobe Premiere Pro",
+        "smallText": "Editing"
+    },
+    {
+        "processName": "illustrator.exe",
+        "splitBy": " @ ",
+        "splitIndex": 0,
+        "largeImageKey": "illustrator_large",
+        "smallImageKey": "illustrator_small",
+        "largeText": "Adobe Illustrator",
+        "smallText": "Editing"
+    },
+    {
+        "processName": "afterfx.exe",
+        "splitBy": " - ",
+        "splitIndex": 1,
+        "largeImageKey": "aftereffects_large",
+        "smallImageKey": "aftereffects_small",
+        "largeText": "Adobe After Effects",
+        "smallText": "Editing"
+    },
+    {
+        "processName": "acrobat.exe",
+        "splitBy": " - ",
+        "splitIndex": 0,
+        "largeImageKey": "acrobat_large",
+        "smallImageKey": "acrobat_small",
+        "largeText": "Adobe Acrobat",
+        "smallText": "Reading"
+    },
+    {
+        "processName": "indesign.exe",
+        "splitBy": " @ ",
+        "splitIndex": 0,
+        "largeImageKey": "indesign_large",
+        "smallImageKey": "indesign_small",
+        "largeText": "Adobe InDesign",
+        "smallText": "Editing"
+    }
 ]
