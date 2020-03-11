@@ -16,21 +16,24 @@ logging.basicConfig(level=logging.DEBUG, format=('%(asctime)s - %(levelname)s - 
 # Attempts to find Discord
 def connect_loop(retries=0):
     logging.info("Connecting rich presence...")
-    if retries > 10:
-        return
-    try:
-        logging.info("Conneting to RPC...")
-        rich_presence.connect()
-    except:
-        logging.error("Error connecting to Discord! Retrying")
-        retries += 1
-        connect_loop(retries)
+    
+    # Retry limit of 10 attempts
+    if retries < 10:
+        try:
+            logging.info("Conneting to RPC...")
+            rich_presence.connect()
+            update_loop()
+        except:
+            logging.error("Error connecting to Discord! Retrying...")
+            retries += 1
+            connect_loop(retries)
     else:
-        update_loop()
+        logging.exception("Failed to connect to Discord! Printing stacktrace and exiting...")
+
 
 # Updates Discord of current activity
 def update_loop():
-    # Sets current time
+    # Sets startup time for the application
     start_time = int(time.time())
     try:
         while True:
