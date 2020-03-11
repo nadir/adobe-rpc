@@ -1,4 +1,4 @@
-from pypresence import Presence, activity
+from pypresence import Presence
 import logging
 import handler
 import time
