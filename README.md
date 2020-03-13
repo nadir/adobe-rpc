@@ -27,7 +27,7 @@ Rich Presence for Discord to display what you're currently doing in most of adob
 Building the binaries from source requires `pyinstaller`
 
 - Install `$ pip install -u pyinstaller`
-- If you are building on Python 3.8+, run `$ pip install -u https://github.com/pyinstaller/pyinstaller/archive/develop.tar.gz`
+- If you are building on **Python 3.8+**, run `$ pip install --user https://github.com/pyinstaller/pyinstaller/archive/develop.tar.gz`
 - Build `$ pyinstaller --onefile .\rpc.py`
 
 ## Binaries
