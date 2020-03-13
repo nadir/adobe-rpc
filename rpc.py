@@ -1,4 +1,4 @@
-from pypresence import Presence, activity
+from pypresence import Presence
 import logging
 import handler
 import time
@@ -13,28 +13,27 @@ logging.basicConfig(level=logging.DEBUG, format=('%(asctime)s - %(levelname)s - 
                                                  '%(funcName)s - %(message)s'),
                     datefmt='%d-%m-%y %H:%M:%S')
 
-# Binds RPC connection to Discord
-def connect():
-    return rich_presence.connect()
-
 # Attempts to find Discord
 def connect_loop(retries=0):
     logging.info("Connecting rich presence...")
-    if retries > 10:
-        return
-    try:
-        logging.info("Conneting to RPC...")
-        connect()
-    except:
-        logging.error("Error connecting to Discord! Retrying")
-        retries += 1
-        connect_loop(retries)
+    
+    # Retry limit of 10 attempts
+    if retries < 10:
+        try:
+            logging.info("Conneting to RPC...")
+            rich_presence.connect()
+            update_loop()
+        except:
+            logging.error("Error connecting to Discord! Retrying...")
+            retries += 1
+            connect_loop(retries)
     else:
-        update_loop()
+        logging.exception("Failed to connect to Discord! Printing stacktrace and exiting...")
+
 
 # Updates Discord of current activity
 def update_loop():
-    # Sets current time
+    # Sets startup time for the application
     start_time = int(time.time())
     try:
         while True:
@@ -58,9 +57,10 @@ def update_loop():
         update_loop()
 
 # Main instance
-def main():
-    logging.info("Started Adobe RPC, starting rich presence...")
-    connect_loop()
-
 if __name__ == "__main__":
-    main()
+    try:
+        logging.info("Started Adobe RPC!")
+        connect_loop()
+    except:
+        logging.info("Stopped Adobe RPC!")
+        sys.exit(0)

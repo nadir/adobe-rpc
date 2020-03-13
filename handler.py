@@ -10,20 +10,27 @@ def get_rpc_update():
             logging.debug("Importing Windows specific modules...")
             from api.windows import get_title, get_process_info, get_status
 
-            # Information to publically show to Discord
             app_info = get_process_info()
-            app_title = get_title(app_info['pid'])
-            app_state = get_status(app_info, app_title)
 
-            # Dictionary setup to return application info
-            rpc_update = {'state': app_state,
-                        'small_image': app_info['smallImageKey'],
-                        'large_image': app_info['largeImageKey'],
-                        'large_text': app_info['largeText'],
-                        'small_text': app_info['smallText'],
-                        'details': app_info['largeText']}
-            # Returns data from processing the application data
-            return rpc_update
+            # Information to publically show to Discord
+            if app_info != None:
+                app_title = get_title(app_info['pid'])
+                app_state = get_status(app_info, app_title)
+
+                # Dictionary setup to return application info
+                rpc_update = {'state': app_state,
+                            'small_image': app_info['smallImageKey'],
+                            'large_image': app_info['largeImageKey'],
+                            'large_text': app_info['largeText'],
+                            'small_text': app_info['smallText'],
+                            'details': app_info['largeText']}
+
+                # Returns data from processing the application data
+                return rpc_update
+
+            # If 'get_process_info()' doesn't find a proper 'processName' element, stop application
+            elif app_info == None:
+                logging.error("Unable to find process")
 
         except ImportError:
             logging.error(
