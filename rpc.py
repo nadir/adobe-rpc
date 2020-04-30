@@ -1,5 +1,6 @@
 from pypresence import Presence
 import handler
+import sys
 import time
 
 client_id = "482150417455775755"
@@ -19,15 +20,21 @@ def connect_loop(retries=0):
         retries += 1
         connect_loop(retries)
     else:
-        update_loop()
+        start_time = int(time.time())
+        update_loop(start_time)
 
 print("Started Adobe RPC")
 
-def update_loop():
-    start_time = int(time.time())
+def term_check(start_time):
+    if (start_time + 80) <= int(time.time()):
+        print("Couldn't find Adobe/Discord, exiting")
+        sys.exit()
+
+def update_loop(start_time):
     try:
         while True:
             rpc_data = handler.get_rpc_update()
+            start_time = int(time.time())
             rich_presence.update(state=rpc_data['state'],
                                  small_image=rpc_data['small_image'],
                                  large_image=rpc_data['large_image'],
@@ -40,7 +47,8 @@ def update_loop():
         rich_presence.clear()
         print("Run Adobe/Discord app")
         time.sleep(5)
-        update_loop()
+        term_check(start_time)
+        update_loop(start_time)
 
 try:
     connect_loop()
