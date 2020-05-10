@@ -5,8 +5,10 @@ import time
 client_id = "482150417455775755"
 rich_presence = Presence(client_id)
 
+
 def connect():
     return rich_presence.connect()
+
 
 def connect_loop(retries=0):
     if retries > 10:
@@ -21,10 +23,11 @@ def connect_loop(retries=0):
     else:
         update_loop()
 
+
 print("Started Adobe RPC")
 
+
 def update_loop():
-    start_time = int(time.time())
     try:
         while True:
             rpc_data = handler.get_rpc_update()
@@ -34,13 +37,14 @@ def update_loop():
                                  large_text=rpc_data['large_text'],
                                  small_text=rpc_data['small_text'],
                                  details=rpc_data['details'],
-                                 start=start_time)
+                                 start=rpc_data['create_time'])
             time.sleep(15)
     except:
         rich_presence.clear()
         print("Run Adobe/Discord app")
         time.sleep(5)
         update_loop()
+
 
 try:
     connect_loop()

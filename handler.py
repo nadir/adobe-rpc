@@ -15,8 +15,10 @@ def get_rpc_update():
                           'large_image': app_info['largeImageKey'],
                           'large_text': app_info['largeText'],
                           'small_text': app_info['smallText'],
-                          'details': app_info['largeText']}
+                          'details': app_info['largeText'],
+                          'create_time': app_info['create_time']}
             return rpc_update
+
 
         except ImportError:
             print("Make sure you have pywin32 installed, for more info read README.md")
