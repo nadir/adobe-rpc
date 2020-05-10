@@ -25,10 +25,14 @@ def get_process_info():
     for element in data:
         process_name = element['processName']
         for process in psutil.process_iter():
-            process_info = process.as_dict(attrs=['pid', 'name'])
-            if process_info['name'].lower() in process_name:
-                element['pid'] = process_info['pid']
-                return element
+            process_info = process.as_dict(attrs=['pid', 'name', 'create_time'])
+            try:
+                if process_info['name'].lower() in process_name:
+                    element['pid'] = process_info['pid']
+                    element['create_time'] = round(process_info['create_time'])
+                    return element
+            except AttributeError:
+                continue
 
 
 def get_status(app_info, title):
