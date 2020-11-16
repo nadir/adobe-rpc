@@ -11,7 +11,7 @@
 
 Rich Presence for Discord to display what you're currently doing in most of adobe's applications
 
-**UPDATE:** The script is now AUTOMATED!
+**UPDATE:** The script is now AUTOMATED! (Automation provided by [bBSempai](https://github.com/bBSempai))
 
 ## Requirements
 
