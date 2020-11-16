@@ -32,18 +32,18 @@ OR just download the **.exe** from the [releases!](https://github.com/smokes/ado
 
 ## For Automation of the RPC
 
-- Upon running an AHK script you can automate your tasks. Here we have two scripts:<br>**1)**[**RPC.ahk**](https://github.com/smokes/adobe-rpc/blob/master/RPC.ahk) which would ensure running of the [**RPC.exe**](https://github.com/smokes/adobe-rpc/releases) in the background upon startup and also "re-run" it as soon as it gets terminated due to closing of any Adobe app or Discord.<br>**2)**[**Failsafe.ahk**](https://github.com/smokes/adobe-rpc/blob/master/failsafe.ahk) which would be helpful if any inconvenience occurs such as if Discord stops displaying your RP even though the **.exe** file is running along with your Adobe application and Discord (Trust me, it happens and I don't know why or what bug causes it. Subject to improvement). The script would, upon certain specific keypress, kill the **.exe** file which is already running and re-run it.<br>
+- Upon running an AHK script you can automate your tasks. Here we have two scripts:<br>**1)**[**RPC.ahk**](https://github.com/smokes/adobe-rpc/blob/master/RPC.ahk) which would ensure running of the [**RPC.exe**](https://github.com/smokes/adobe-rpc/releases) in the background upon startup and also "re-run" it as soon as it gets terminated due to closing of any Adobe app or Discord.<br>**2)**[**Failsafe.ahk**](https://github.com/smokes/adobe-rpc/blob/master/failsafe.ahk) which would be helpful if any inconvenience occurs such as if Discord stops displaying your RP even though the **.exe** file is running along with your Adobe application and Discord (Trust me, it happens and I don't know why or what bug causes it. Subject to improvement). The script would, upon certain specific keypress(CTRL+ALT+SHIFT+\` by default; can be edited), kill the **.exe** file which is already running and re-run it.<br>Look at the script codes yourselves to understand properly if you want.
 - Now in order to automate your RPC all you have to do is keep these scripts running in background. Don't worry, they will literally consume almost negligible memory leaving no trace in your taskbar and tray. If needed, you can manually control them from the Task Manager window. All you gotta do to make them autorun is follow the steps below:
 - Install [AHK](https://www.autohotkey.com) (Takes up <15 Mb worth of space)
 - Set your AHK file to run automatically on startup everytime you boot. If you already don't know how to then just follow these instructions:
   - RUN shell:startup<br><br>
   <img src = "https://i.imgur.com/Umr4unL.jpeg" /><br><br>
   - It will open this directory -> (C:\Users\<NAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup)<br><br>
-  <img src = "https://i.imgur.com/EY22e9A.png"/><br><br>
+  <img src = "https://i.imgur.com/J1FjIFH.png"/><br><br>
   - If the directory (Startup Folder) doesn't already exist...THEN MAKE ONE 🙂
   - Place your .AHK file **shortcuts** in this directory. Now your AHK files will run on startup every time you boot up your PC. **Meaning** the RPC.exe will run automatically now upon startup in hidden mode and would also not stop running even if you close your Adobe app or Discord. For further knowledge of the scripts' working you can check out the instructional comments provided in the scripts themselves. Restart your setup and Voila! It should be working perfectly!
   
-**Note: You can always manually control the rpc.exe and the .ahk files from the Task Manager window if any issues occur**
+**Note: You can always manually control the rpc.exe and the .ahk files from the Task Manager window if any issues occur.**
 
 ## Binaries
 
