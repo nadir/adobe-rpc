@@ -9,7 +9,7 @@
 
 	},
 	{
-		"processName": "adobe premiere pro.exe",
+		"processName": "adobe_premiere_pro.exe",
 		"splitBy": " - ",
 		"splitIndex": 1,
 		"largeImageKey": "premierepro_large",
